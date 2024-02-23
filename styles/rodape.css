@@ -1,0 +1,54 @@
+hr{     /*esse hr acrescenta a linha acima do rodape*/
+    margin: 0;
+}
+
+.rodape{
+    background-color: var(--cor-branco);
+    padding: 1em;
+}
+
+.lista-rodape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodape__item{
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista-rodape__link{
+        color: var(--cor-branco);
+        text-decoration: none;
+        margin: 0.6em;
+    }
+
+    .lista-rodape__titulo{
+        font-size: 14px;
+    }
+
+    .rodape__titulo{
+        font-size: 20px;
+    }
+
+    .lista-rodape{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .lista-rodape{
+        border-left: 1px solid var(--cor-de-fundo);
+        padding-left: 1em;
+    }
+
+    .rodape{
+        padding: 3em 0;
+    }
+}
